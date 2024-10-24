@@ -55,7 +55,7 @@ const Navbar2 = () => {
                     <FaCaretDown className="transition-all duration-200 group-hover:rotate-180" />
                   </span>
                 </a>
-                <div className="absolute -left-9 z-[9999] hidden w-[150px] rounded-md bg-white p-2 text-black group-hover:block  ">
+                <div className=" left-9 z-[9999] hidden w-[150px] rounded-md bg-white p-2 text-black group-hover:block  ">
                   <ul className="space-y-3">
                     <li className="p-2 hover:bg-violet-200">Services</li>
                     <li className="p-2 hover:bg-violet-200">About us</li>
