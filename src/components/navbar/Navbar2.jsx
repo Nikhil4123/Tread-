@@ -29,7 +29,7 @@ const Navbar2 = () => {
 
   return (
     <>
-      <header className="  border-b-6 border-primary/50 bg-gradient-to-l from-violet-900 via-violet-800 to-violet-900 text-white shadow-lg">
+      <header className="border-b-2 border-primary/50 bg-gradient-to-l from-violet-900 via-violet-800 to-violet-900 text-white shadow-lg">
         <nav className="container mx-auto flex h-[70px] items-center justify-between px-4 md:px-8">
           <div className="text-2xl text-white md:text-3xl">
             <a href="/#home" className="font-bold">
