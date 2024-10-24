@@ -43,7 +43,7 @@ const Navbar2 = () => {
               <a href="/#home" className="flex items-center gap-1">
                 Home <FaCaretDown className="transition-transform duration-200 group-hover:rotate-180" />
               </a>
-              <div className="absolute left-0 mt-1 hidden w-[150px] rounded-md bg-white p-2 text-black shadow-lg group-hover:block">
+              <div className="left-0 mt-1 hidden w-[150px] rounded-md bg-white p-2 text-black shadow-lg group-hover:block">
                 <ul className="space-y-2">
                   <li className="p-2 hover:bg-violet-200">Services</li>
                   <li className="p-2 hover:bg-violet-200">About us</li>
@@ -56,7 +56,7 @@ const Navbar2 = () => {
               <a href="/#services" className="flex items-center gap-1">
                 Services <FaCaretDown className="transition-transform duration-200 group-hover:rotate-180" />
               </a>
-              <div className="absolute left-0 mt-1 hidden w-[300px] rounded-md bg-white p-2 text-black shadow-lg group-hover:block">
+              <div className="left-0 mt-1 hidden w-[300px] rounded-md bg-white p-2 text-black shadow-lg group-hover:block">
                 <div className="grid grid-cols-3 gap-4">
                   <div className="col-span-1">
                     <img
