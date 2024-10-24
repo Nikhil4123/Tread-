@@ -14,6 +14,7 @@ import Service from "./components/Service/Service";
 import BannerDetails from "./components/BannerDetails/BannerDetails";
 import Banner1 from "./assets/blog1.jpg";
 import Banner2 from "./assets/blog3.jpg";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   useEffect(() => {
@@ -29,8 +30,7 @@ function App() {
     <>
       <div className="dark:bg-slate-900 dark:text-white">
         <div className="fixed left-0 right-0 top-0 z-50 bg-gradient-to-l from-violet-900 via-violet-800 to-violet-900 ">
-          {/* <Navbar /> */}
-          <Navbar2 />
+           <Navbar2 /> 
         </div>
         <Hero />
         <Service />
