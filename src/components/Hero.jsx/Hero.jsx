@@ -34,7 +34,7 @@ const Hero = () => {
             data-aos="fade-left"
             data-aos-duration="400"
             data-aos-once="true"
-            className="mx-auto max-w-xs p-4"
+            className="mx-auto max-w-md p-4"
           >
             <img src={Banner} alt="No image" className="hover:drop-shadow-md" />
           </div>

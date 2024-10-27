@@ -1,48 +1,36 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from 'react';
+import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+import AboutPage from './components/About/AboutPage.jsx'; // Import your About page
+// import PrivacyPage from './PrivacyPage'; // Import your Privacy Policy page
+import HomePage from './HomePage'; // Import your Home page
+import ServicesPage2 from './components/Service/ServicesPage2.jsx';
+import PrivacyPage from './components/Privercy/PrivacyPage.jsx';
+// import Login from './Login'; // Import your Login page
+// import Signup from './Signup'; // Import your Signup page
 
-import Banner from "./components/Banner/Banner";
-import Blogs from "./components/Blogs/Blogs";
-import Swipe from "./components/Blogs/Swipe";
-import Footer from "./components/Footer/Footer";
-import Hero from "./components/Hero.jsx/Hero";
-// import Navbar from "./components/navbar/Navbar";
-import Navbar2 from "./components/navbar/Navbar2";
-import { useEffect } from "react";
-import Service from "./components/Service/Service";
-import BannerDetails from "./components/BannerDetails/BannerDetails";
-import Banner1 from "./assets/blog1.jpg";
-import Banner2 from "./assets/blog3.jpg";
-import Navbar from "./components/navbar/Navbar";
-
-function App() {
-  useEffect(() => {
-    AOS.init({
-      offset: 100,
-      duration: 500,
-      easing: "ease-in-sine",
-      delay: 100,
-    });
-    AOS.refresh();
-  }, []);
-  return (
-    <>
-      <div className="dark:bg-slate-900 dark:text-white">
-        <div className="fixed left-0 right-0 top-0 z-50 bg-gradient-to-l from-violet-900 via-violet-800 to-violet-900 ">
-           <Navbar2 /> 
-        </div>
-        <Hero />
-        <Service />
-        <BannerDetails reverse={true} img={Banner1} />
-        <BannerDetails img={Banner2} />
-        <Banner />
-        <Blogs />
-        {/* <Swipe /> */}
-        <Footer />
-      </div>
+const appRouter =createBrowserRouter([
+    {
+        path:'/',
+        element:<HomePage/>
+    },{
+        path:'/services',
+        element:<ServicesPage2/>
+    },{
+        path:'/about',
+        element:<AboutPage/>
+    },{
+        path:'/privacypage',
+        element:<PrivacyPage/>
+    }
+])
+const App = () => {
+  return (<>
+    
+    <RouterProvider router={appRouter}/>
     </>
   );
-}
+};
 
 export default App;
