@@ -7,6 +7,7 @@ import AboutPage from './components/About/AboutPage.jsx'; // Import your About p
 import HomePage from './HomePage'; // Import your Home page
 import ServicesPage2 from './components/Service/ServicesPage2.jsx';
 import PrivacyPage from './components/Privercy/PrivacyPage.jsx';
+import SignupPage from './components/User/SignupPage.jsx';
 // import Login from './Login'; // Import your Login page
 // import Signup from './Signup'; // Import your Signup page
 
@@ -23,6 +24,9 @@ const appRouter =createBrowserRouter([
     },{
         path:'/privacypage',
         element:<PrivacyPage/>
+    },{
+        path:'/signup',
+        element:<SignupPage/>
     }
 ])
 const App = () => {
